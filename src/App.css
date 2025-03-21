@@ -1,0 +1,167 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 2rem;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1em;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .responsive-padding {
+    padding: 0.5rem !important;
+  }
+  
+  .responsive-text {
+    font-size: 0.875rem !important;
+  }
+  
+  .responsive-text-sm {
+    font-size: 0.75rem !important;
+  }
+  
+  /* Card and container adjustments */
+  .card-mobile {
+    padding: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .container-mobile {
+    padding: 0.5rem !important;
+  }
+  
+  /* Input and form element sizes */
+  .input-mobile {
+    height: 2.25rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  .button-mobile {
+    height: 2.25rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  /* Text sizing adjustments */
+  h1.mobile-text {
+    font-size: 1.5rem !important;
+  }
+  
+  h2.mobile-text {
+    font-size: 1.25rem !important;
+  }
+  
+  h3.mobile-text {
+    font-size: 1.125rem !important;
+  }
+  
+  p.mobile-text {
+    font-size: 0.875rem !important;
+  }
+  
+  .mobile-text-xs {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Better scroll behavior for mobile */
+html, body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Improved touch targets for mobile */
+@media (max-width: 768px) {
+  button, 
+  [role="button"],
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .touch-target-sm {
+    min-height: 36px;
+    min-width: 36px;
+  }
+  
+  /* Adjustments for card layouts */
+  .grid-cols-2-mobile {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .grid-cols-3-mobile {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Icon sizing */
+  .icon-mobile {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  
+  .icon-mobile-sm {
+    width: 0.875rem !important;
+    height: 0.875rem !important;
+  }
+  
+  /* Spacing adjustments */
+  .space-y-mobile {
+    margin-top: 1rem !important;
+  }
+  
+  .gap-mobile {
+    gap: 0.5rem !important;
+  }
+}
